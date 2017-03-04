@@ -1,0 +1,18 @@
+#+Paige Thompson cool, didn't know about those hyper-v enlightements, managed to squeeze yet a bit more performance out of it, now I'm at 99.6% compared to native :-)﻿
+
+#It's simple, update your kernel!
+
+Linux 3.17 supports full pci resets which means you can do
+- rmmod nvidia
+- start vm
+- do stuff
+- shutdown vm
+- modprobe nvidia
+
+Here's the script I currenly use: http://pastebin.com/rcnUZCv7
+
+Only downside is: X.org can't handly dynamically added graphic cards...you can use the card for cuda, bitcoin farming, whatever, but to use it for displaying a desktop you have to restart X.org...
+
+But don't worry, hopefully a year from now Wayland will be mature enough...then we can have our cake AND eat it :-)﻿
+
+#
